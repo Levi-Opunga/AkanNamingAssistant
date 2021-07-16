@@ -15,7 +15,7 @@ function onSubmit() {
     let yy = parseInt(year1);
     console.log(dd + mm + year);
 
-    if (dd >= 32) {}
+    if (dd >= 32) { document.getElementById }
 
 
 
