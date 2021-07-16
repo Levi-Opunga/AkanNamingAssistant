@@ -15,7 +15,7 @@ function onSubmit() {
     let yy = parseInt(year1);
     console.log(dd + mm + year);
 
-    if (dd >= 32) { document.getElementById }
+    if (dd >= 32) { document.getElementById(dayerror).innerHTML = "Invalid day such an entry will result in errors" }
 
 
 
