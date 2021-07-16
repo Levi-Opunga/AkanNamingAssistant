@@ -3,7 +3,9 @@ function onSubmit() {
     let month = document.getElementById('month').value;
     let year = document.getElementById('year').value;
     let gender = document.getElementById('gender').value;
-    //document.getElementById("output").innerHTML = day + month + year + gender;
+    document.getElementById("output").innerHTML = day + month + year + gender;
+
+
     let century = year.slice(0, 2);
     let year1 = year.substr(2, 2);
     console.log(century + " " + year1);
@@ -13,13 +15,17 @@ function onSubmit() {
     let yy = parseInt(year1);
     console.log(dd + mm + year);
 
-    let dayOfTheWeek = (((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
-    console.log(dayOfTheWeek)
-    console.log(dd, mm, cc, yy)
-    console.log(Math.round(dayOfTheWeek))
-    const finalValue = Math.round(dayOfTheWeek)
+    if (dd >= 32) {}
 
-    console.log(finalValue)
+
+
+    let dayL = (((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
+
+    const finalValue = Math.round(dayL)
+
+
+
+    document.getElementById("output").innerHTML = day + " " + month + " " + year + " " + finalValue
 
 
 
@@ -27,7 +33,7 @@ function onSubmit() {
     let dayOfTheWeek = finalValue;
 
     let isMale = gender;
-    let finalValue = 2;
+    let dayOfTheWeekMale = finalValue;
 
     if (dayOfTheWeek == 0 && isFemale == "2") {
         document.getElementById('akan').innerHTML = "Your Akan name is  Akosua";;
