@@ -18,39 +18,47 @@
 
 
 
-    <div class="container-fluid">
-        <h2>Calculate your BMI below</h2>
-        <form> Submit
+    <div class="container">
+        <h2>To get your Akan name fill the entries below and Submit</h2>
+        <form>
 
             <div class="form-group">
-                <label for="weight">Enter day in digits</label>
+                <label for="day">Enter day in digits</label>
                 <input type="number" class="form-control" placeholder="Enter day" id="day">
             </div>
             <div class="form-group">
-                <label for="height">Month in digits:</label>
+                <label for="month">Month in digits:</label>
 
                 <input type="number" class="form-control" placeholder="Enter month" id="month">
 
             </div>
 
             <div class="form-group">
-                <label for="height">Year in digits:</label>
+                <label for="year">Year in digits:</label>
 
                 <input type="number" class="form-control" placeholder="Enter year" id="year">
 
             </div>
+            <div class="form-group">
+                <label for="gender">Enter gender the number 1 for male and the number 2 for female:</label>
 
-            <button type="button" class="btn btn-primary" onclick="dateInputs()">Submit</button>
+                <input type="number" class="form-control" placeholder="Enter gender" id="gender">
 
+            </div>
+            <button type="button" class="btn btn-primary" onclick="onSubmit()">Submit</button>
 
+            <p id="output"></p>
+            <h2 id="akan"></h2>
+            <h2 id="akan2"></h2>
         </form>
 
         <script src="js/script.js"></script>
+
+
+
+
+    </div>
 </body>
-
-
-
-
 
 
 
