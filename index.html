@@ -26,13 +26,16 @@
             <div class="form-group">
                 <label for="day">Enter day in digits</label>
                 <input type="number" class="form-control" placeholder="Enter day" id="day">
-                <h4 id="dayerror" class=""></h4>
+                <h4 id="daycorrect" class="greentext"></h4>
+                <h4 id="dayerror" class="redtext"></h4>
+
             </div>
             <div class="form-group">
                 <label for="month">Month in digits:</label>
 
                 <input type="number" class="form-control" placeholder="Enter month" id="month">
-
+                <h4 class="redtext" id="montherror"></h4>
+                <h4 class="greentext" id="monthcorrect"></h4>
             </div>
 
             <div class="form-group">
@@ -49,11 +52,12 @@
             </div>
             <button type="button" class="btn btn-primary" onclick="onSubmit()">Submit</button>
 
-            <p id="output"></p>
+            <!-- <p id="output"></p>-->
             <h2 id="akan"></h2>
             <h2 id="akan2"></h2>
+            <h2 id="missingentryF"></h2>
+            <h2 id="missingentryM"></h2>
         </form>
-
         <script src="js/script.js"></script>
 
 
