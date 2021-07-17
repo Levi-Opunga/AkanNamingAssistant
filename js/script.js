@@ -43,7 +43,7 @@ function onSubmit() {
     let dayL =
         (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7;
 
-    const finalValue = Math.round(dayL);
+    const finalValue = Math.abs(Math.round(dayL));
 
     //document.getElementById("output").innerHTML =
     //day + " " + month + " " + year + " " + finalValue;
@@ -62,7 +62,7 @@ function onSubmit() {
         document.getElementById("akan").innerHTML = "Your Akan name is  Abenaa";
     } else if (dayOfTheWeek == 3 && isFemale == "2") {
         document.getElementById("akan").innerHTML = "Your Akan name is  Akua";
-    } else if (dayOfTheWeek == 4 && isFemale) {
+    } else if (dayOfTheWeek == 4 && isFemale == "2") {
         document.getElementById("akan").innerHTML = "Your Akan name is  Yaa";
     } else if (dayOfTheWeek == 5 && isFemale == "2") {
         document.getElementById("akan").innerHTML = "Your Akan name is  Afua";
@@ -71,7 +71,8 @@ function onSubmit() {
     } else if (dayOfTheWeek <= 6 || (dayOfTheWeek >= 0 && isFemale == "1")) {
         document.getElementById("akan").innerHTML = "";
     } else {
-        document.getElementById("akan").innerHTML = "Entry missing";
+        document.getElementById("missingentryF").innerHTML =
+            "Missing Entry !!!!!!!!";
     }
 
     if (dayOfTheWeekMale == 0 && isMale == "1") {
@@ -88,9 +89,13 @@ function onSubmit() {
         document.getElementById("akan2").innerHTML = "Your Akan name Kofi";
     } else if (dayOfTheWeekMale == 6 && isMale == "1") {
         document.getElementById("akan2").innerHTML = "Your Akan name is Kwame";
-    } else if (dayOfTheWeekMale <= 6 || (dayOfTheWeekMale >= 0 && male == "2")) {
+    } else if (
+        dayOfTheWeekMale <= 6 ||
+        (dayOfTheWeekMale >= 0 && isMale == "2")
+    ) {
         document.getElementById("akan2").innerHTML = "";
     } else {
-        document.getElementById("akan2").innerHTML = "Entry missing";
+        document.getElementById("missingentryM").innerHTML =
+            "Missing Entry !!!!!!!!";
     }
 }

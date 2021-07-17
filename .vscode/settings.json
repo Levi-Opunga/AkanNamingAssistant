@@ -1,0 +1,12 @@
+{
+    "cSpell.ignoreWords": [
+        "daycorrect",
+        "dayerror",
+        "montherror"
+    ],
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex"
+    ]
+}
