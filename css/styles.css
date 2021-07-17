@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(../images/africanpatterns_231.jpg);
+    background-image: url(../images/abstract-ethnic-african-pattern_37925-695.jpg);
 }
 
 div.container {
@@ -15,6 +15,6 @@ div.container {
     opacity: 97%;
 }
 
-header {
-    opacity: 0;
+.brown {
+    color: #49311d;
 }
