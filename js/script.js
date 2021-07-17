@@ -3,7 +3,7 @@ function onSubmit() {
     let month = document.getElementById("month").value;
     let year = document.getElementById("year").value;
     let gender = document.getElementById("gender").value;
-    document.getElementById("output").innerHTML = day + month + year + gender;
+    //document.getElementById("output").innerHTML = day + month + year + gender;
 
     let century = year.slice(0, 2);
     let year1 = year.substr(2, 2);
@@ -45,8 +45,8 @@ function onSubmit() {
 
     const finalValue = Math.round(dayL);
 
-    document.getElementById("output").innerHTML =
-        day + " " + month + " " + year + " " + finalValue;
+    //document.getElementById("output").innerHTML =
+    //day + " " + month + " " + year + " " + finalValue;
 
     let isFemale = gender;
     let dayOfTheWeek = finalValue;
