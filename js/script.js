@@ -16,7 +16,28 @@ function onSubmit() {
 
     if (dd >= 32) {
         document.getElementById("dayerror").innerHTML =
-            "Invalid day such an entry will result in errors";
+            "Invalid day such an entry will result in errors ❌";
+        document.getElementById("daycorrect").innerHTML = "";
+    } else if (dd <= 0) {
+        document.getElementById("dayerror").innerHTML =
+            "Invalid day such an entry will result in errors ❌";
+        document.getElementById("daycorrect").innerHTML = "";
+    } else {
+        document.getElementById("daycorrect").innerHTML = "Valid entry ✅";
+        document.getElementById("dayerror").innerHTML = "";
+    }
+
+    if (mm >= 13) {
+        document.getElementById("montherror").innerHTML =
+            "Invalid month such an entry will result in errors ❌";
+        document.getElementById("monthcorrect").innerHTML = "";
+    } else if (mm <= 0) {
+        document.getElementById("montherror").innerHTML =
+            "Invalid month such an entry will result in errors ❌";
+        document.getElementById("monthcorrect").innerHTML = "";
+    } else {
+        document.getElementById("monthcorrect").innerHTML = "Valid entry ✅";
+        document.getElementById("montherror").innerHTML = "";
     }
 
     let dayL =
@@ -50,7 +71,7 @@ function onSubmit() {
     } else if (dayOfTheWeek <= 6 || (dayOfTheWeek >= 0 && isFemale == "1")) {
         document.getElementById("akan").innerHTML = "";
     } else {
-        document.getElementById("akan").innerHTML = "invalid day of the week";
+        document.getElementById("akan").innerHTML = "Entry missing";
     }
 
     if (dayOfTheWeekMale == 0 && isMale == "1") {
@@ -70,6 +91,6 @@ function onSubmit() {
     } else if (dayOfTheWeekMale <= 6 || (dayOfTheWeekMale >= 0 && male == "2")) {
         document.getElementById("akan2").innerHTML = "";
     } else {
-        document.getElementById("akan2").innerHTML = "invalid day of the week";
+        document.getElementById("akan2").innerHTML = "Entry missing";
     }
 }
