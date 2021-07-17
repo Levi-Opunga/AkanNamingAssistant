@@ -16,14 +16,16 @@
 
 <body>
 
-    <header class="container-fluid jumbotron text-center">
-        <h1 class="brown">Akan Naming Assistant App</h1>
+    <header class="brown">
+        <h1 class="text-center ">Akan Name Assistant WebApp</h1>
     </header>
+    <br>
+    <br><br><br><br><br><br>
 
+    <div class="container darktext jumbotron">
 
-
-    <div class="container jumbotron">
-        <h2>To get your Akan name fill the entries below and Submit</h2>
+        <h2 style="font-size:2.4em;">To get your Akan name fill the entries below and Submit</h2>
+        <br>
         <form>
 
             <div class="form-group">
@@ -31,7 +33,7 @@
                 <input type="number" class="form-control" placeholder="Enter day" id="day">
                 <h4 id="daycorrect" class="greentext"></h4>
                 <h4 id="dayerror" class="redtext"></h4>
-
+                <br>
             </div>
             <div class="form-group">
                 <label for="month">Month in digits:</label>
@@ -48,7 +50,10 @@
 
             </div>
             <div class="form-group">
-                <label for="gender">Enter your gender the number 1 for male and the number 2 for female:</label>
+                <label for="gender">Enter your gender <ul>
+                        <li> 1 for [Male ♂]</li>
+                        <li>2 for [Female ♀]</li>
+                    </ul> </label>
 
                 <input type="number" class="form-control" placeholder="Enter  gender" id="gender">
 
@@ -56,8 +61,9 @@
             <button type="button" class="btn btn-primary" onclick="onSubmit()">Submit</button>
 
             <!--<p id="output"></p>-->
-            <h2 id="akan"></h2>
-            <h2 id="akan2"></h2>
+            <h2 class="text-center" id="akan"></h2>
+
+            <h2 class="text-center" id="akan2"></h2>
             <h2 id="missingentryF" class="redtext"></h2>
             <h2 id="missingentryM" class="redtext"></h2>
         </form>
@@ -68,6 +74,7 @@
 
     </div>
 </body>
+
 
 
 

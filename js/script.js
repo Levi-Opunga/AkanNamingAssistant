@@ -16,11 +16,11 @@ function onSubmit() {
 
     if (dd >= 32) {
         document.getElementById("dayerror").innerHTML =
-            "Invalid day such an entry will result in errors ❌";
+            "Invalid entry: An entry above 31 will result in errors ❌";
         document.getElementById("daycorrect").innerHTML = "";
     } else if (dd <= 0) {
         document.getElementById("dayerror").innerHTML =
-            "Invalid day such an entry will result in errors ❌";
+            "Invalid entry: An entry balow zero will result in errors ❌";
         document.getElementById("daycorrect").innerHTML = "";
     } else {
         document.getElementById("daycorrect").innerHTML = "Valid entry ✅";
@@ -42,9 +42,7 @@ function onSubmit() {
 
     let dayL =
         (cc / 4 - 2 * cc - 1 + (5 * yy) / 4 + (26 * (mm + 1)) / 10 + dd) % 7;
-
     const finalValue = Math.abs(Math.round(dayL));
-
     //document.getElementById("output").innerHTML =
     //day + " " + month + " " + year + " " + finalValue;
 
@@ -53,22 +51,29 @@ function onSubmit() {
 
     let isMale = gender;
     let dayOfTheWeekMale = finalValue;
-
     if (dayOfTheWeek == 0 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is  Akosua";
+        document.getElementById("akan").innerHTML =
+            "🌼🌺Your Akan name is  Akosua🌺🌼";
     } else if (dayOfTheWeek == 1 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is Adwoa";
+        document.getElementById("akan").innerHTML =
+            '🌼🌺Your Akan name is <b class="femaletext">Adwoa</b>🌺🌼';
     } else if (dayOfTheWeek == 2 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is  Abenaa";
+        document.getElementById("akan").innerHTML =
+            '🌼🌺Your Akan name is <b class="femaletext"> Abenaa</b>🌺🌼';
     } else if (dayOfTheWeek == 3 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is  Akua";
+        document.getElementById("akan").innerHTML =
+            "🌼🌺Your Akan name is  Akua🌺🌼";
     } else if (dayOfTheWeek == 4 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is  Yaa";
+        document.getElementById("akan").innerHTML =
+            "🌼🌺Your Akan name is  Yaa🌺🌼";
     } else if (dayOfTheWeek == 5 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is  Afua";
+        document.getElementById("akan").innerHTML =
+            "🌼🌺Your Akan name is  Afua🌺🌼";
     } else if (dayOfTheWeek == 6 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "Your Akan name is Ama";
-    } else if (dayOfTheWeek <= 6 || (dayOfTheWeek >= 0 && isFemale == "1")) {
+        document.getElementById("akan").innerHTML = "🌼🌺Your Akan name is Ama🌺🌼";
+    } else if (dayOfTheWeek == 7 && isFemale == "2") {
+        document.getElementById("akan").innerHTML = "🌼🌺Your Akan name is Ama🌺🌼";
+    } else if (dayOfTheWeek <= 7 || (dayOfTheWeek >= 0 && isFemale == "1")) {
         document.getElementById("akan").innerHTML = "";
     } else {
         document.getElementById("missingentryF").innerHTML =
@@ -76,21 +81,24 @@ function onSubmit() {
     }
 
     if (dayOfTheWeekMale == 0 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is  Kwasi";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Kwasi🔥";
     } else if (dayOfTheWeekMale == 1 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is Kwadwo";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwadwo🔥";
     } else if (dayOfTheWeekMale == 2 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is  Kwabena";
+        document.getElementById("akan2").innerHTML =
+            "🔥Your Akan name is  Kwabena🔥";
     } else if (dayOfTheWeekMale == 3 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is  Kwaku";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Kwaku🔥";
     } else if (dayOfTheWeekMale == 4 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is  Yaw";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Yaw🔥";
     } else if (dayOfTheWeekMale == 5 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name Kofi";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name Kofi🔥";
     } else if (dayOfTheWeekMale == 6 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "Your Akan name is Kwame";
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwame🔥";
+    } else if (dayOfTheWeekMale == 7 && isMale == "1") {
+        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwame🔥";
     } else if (
-        dayOfTheWeekMale <= 6 ||
+        dayOfTheWeekMale <= 7 ||
         (dayOfTheWeekMale >= 0 && isMale == "2")
     ) {
         document.getElementById("akan2").innerHTML = "";
