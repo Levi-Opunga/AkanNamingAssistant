@@ -5,3 +5,16 @@
 .greentext {
     color: greenyellow;
 }
+
+body {
+    background-image: url(../images/africanpatterns_231.jpg);
+}
+
+div.container {
+    background-color: rgb(255, 221, 182);
+    opacity: 97%;
+}
+
+header {
+    opacity: 0;
+}
