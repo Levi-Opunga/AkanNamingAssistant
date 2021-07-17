@@ -1,3 +1,7 @@
-#dayerror {
+.redtext {
     color: red;
+}
+
+.greentext {
+    color: greenyellow;
 }
