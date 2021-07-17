@@ -1,6 +1,6 @@
 # Akan Naming Web Application
 
-#### 1.000
+#### Version 1.000
 
 #### By **Levi Opunga**
 
@@ -19,7 +19,7 @@
   `$ atom .`
 - If using Visual Studio Code open by running command
   `$ code .`
-  -In Visual Studio Code get the Live Server extension then click on the Go Live icon at the lower shortcuts bar in order to open the html page on a live server for easier viewing of editing changes.
+- In Visual Studio Code get the Live Server extension then click on the Go Live icon at the lower shortcuts bar in order to open the html page on a live server for easier viewing of editing changes.
 
 ## Known Bugs
 
