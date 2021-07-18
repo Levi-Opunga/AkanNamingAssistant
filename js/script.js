@@ -88,32 +88,46 @@ function onSubmit() {
     }
 
     if (dayOfTheWeekMale == 0 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Kwasi🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is  <b class="maletext">Kwasi</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 1 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwadwo🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is <b class="maletext">Kwadwo</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 2 && isMale == "1") {
         document.getElementById("akan2").innerHTML =
-            "🔥Your Akan name is  Kwabena🔥";
+            '♧♢🔥Your Akan name is  <b class="maletext">Kwabena🔥♢♧';
     } else if (dayOfTheWeekMale == 3 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Kwaku🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is  <b class="maletext">Kwaku</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 4 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is  Yaw🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is  <b class="maletext">Yaw</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 5 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name Kofi🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name <b class="maletext">Kofi</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 6 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwame🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is <b class="maletext">Kwame</b>🔥♢♧';
     } else if (dayOfTheWeekMale == 7 && isMale == "1") {
-        document.getElementById("akan2").innerHTML = "🔥Your Akan name is Kwame🔥";
+        document.getElementById("akan2").innerHTML =
+            '♧♢🔥Your Akan name is <b class="maletext">Kwame</b>🔥♢♧';
     } else if (
         dayOfTheWeekMale <= 7 ||
         (dayOfTheWeekMale >= 0 && isMale == "2")
     ) {
         document.getElementById("akan2").innerHTML = "";
-    } else if (isMale == 1 || isMale == 2) {
+    } else if (isMale == 1 || (isMale == 2 && dayOfTheWeekMale != 0)) {
         document.getElementById("errorG").innerHTML = "";
     } else if (isMale != 1 || isMale != 2) {
-        document.getElementById("errorG").innerHTML = "Wrong Gender";
+        document.getElementById("errorG").innerHTML =
+            "Gender Error Refresh Page And Enter Valid Entry ";
+    } else if (
+        (isMale != 1 && dayOfTheWeekMale && dayOfTheWeek >= 0) ||
+        (isMale != 2 && dayOfTheWeekMale && dayOfTheWeek >= 0)
+    ) {
+        document.getElementById("errorG").innerHTML =
+            "Gender Error Refresh Page And Enter Valid Entry ";
     } else {
-        document.getElementById("akan1").innerHTML = "Missing Entry !!!!!!!!";
+        document.getElementById("akan").innerHTML = "Missing Entry !!!!!!!!";
     }
 }

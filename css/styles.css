@@ -26,7 +26,7 @@ div.container {
 }
 
 .brown {
-    color: #996133;
+    color: azure;
 }
 
 .white {
@@ -40,7 +40,7 @@ header {
 }
 
 .femaletext {
-    color: rgb(207, 119, 3);
+    color: #ce4257;
 }
 
 .darktext {
@@ -52,10 +52,15 @@ label {
     font-size: 18.7px;
 }
 
-p {
+p.darktext {
     font-size: xx-large;
 }
 
-.blue {
-    color: blue;
+.maletext {
+    color: #ff7700;
+}
+
+p {
+    color: #38164b;
+    font: size -1px;
 }
