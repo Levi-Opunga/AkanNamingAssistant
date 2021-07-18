@@ -111,7 +111,7 @@ function onSubmit() {
         document.getElementById("akan2").innerHTML = "";
     } else if (isMale == 1 || isMale == 2) {
         document.getElementById("errorG").innerHTML = "";
-    } else if (isMale != 1 && isMale != 2) {
+    } else if (isMale != 1 || isMale != 2) {
         document.getElementById("errorG").innerHTML = "Wrong Gender";
     } else {
         document.getElementById("akan1").innerHTML = "Missing Entry !!!!!!!!";
