@@ -7,23 +7,36 @@
 }
 
 body {
-    background-image: url(../images/abstract-ethnic-african-pattern_37925-695.jpg);
+    background-image: url(/images/pngtree-hand-drawn-geometric-ethnic-seamless-patterns-for-decoration-image_259152.jpg);
+}
+
+.purple {
+    background-color: #38164b;
+}
+
+.lightpurple {
+    background-color: aliceblue;
 }
 
 div.container {
     background-color: rgb(255, 221, 182);
     opacity: 97%;
+    padding: 40px;
+    border-radius: 8px;
 }
 
 .brown {
-    color: #49311d;
+    color: #996133;
+}
+
+.white {
+    background-color: aliceblue;
 }
 
 header {
     background-color: aliceblue;
     padding-top: 50px;
     padding-bottom: 50px;
-    z
 }
 
 .femaletext {
@@ -37,4 +50,8 @@ header {
 
 label {
     font-size: 18.7px;
+}
+
+p {
+    font-size: xx-large;
 }

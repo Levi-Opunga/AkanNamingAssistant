@@ -16,11 +16,18 @@
 
 <body>
 
-    <header class="brown">
+    <header class="brown purple">
         <h1 class="text-center ">Akan Name Assistant WebApp</h1>
     </header>
     <br>
-    <br><br><br><br><br><br>
+    <br><br>
+    <div class=" container">
+        <p class="darktext ">The Akan naming system is a traditional Ghanaian system of naming children which uses the day of the week the a child was born to determine their name . This website was made with an aim of simplifying this process by giving out the right name
+            basing on the date of birth and the gender. </p>
+    </div>
+
+    <br><br><br><br>
+
 
     <div class="container darktext jumbotron">
 
@@ -29,14 +36,14 @@
         <form>
 
             <div class="form-group">
-                <label for="day">Enter day in digits</label>
+                <label for="day">Enter the day:</label>
                 <input type="number" class="form-control" placeholder="Enter day" id="day">
                 <h4 id="daycorrect" class="greentext"></h4>
                 <h4 id="dayerror" class="redtext"></h4>
-                <br>
+
             </div>
             <div class="form-group">
-                <label for="month">Month in digits:</label>
+                <label for="month">Enter the month:</label>
 
                 <input type="number" class="form-control" placeholder="Enter month" id="month">
                 <h4 class="redtext" id="montherror"></h4>
@@ -44,17 +51,16 @@
             </div>
 
             <div class="form-group">
-                <label for="year">Year in digits:</label>
+                <label for="year">Enter the year:</label>
 
                 <input type="number" class="form-control" placeholder="Enter year" id="year">
 
             </div>
             <div class="form-group">
-                <label for="gender">Enter your gender <ul>
+                <label for="gender">Enter your gender: <ul>
                         <li> 1 for [Male ♂]</li>
                         <li>2 for [Female ♀]</li>
                     </ul> </label>
-
                 <input type="number" class="form-control" placeholder="Enter  gender" id="gender">
 
             </div>
@@ -64,8 +70,10 @@
             <h2 class="text-center" id="akan"></h2>
 
             <h2 class="text-center" id="akan2"></h2>
-            <h2 id="missingentryF" class="redtext"></h2>
-            <h2 id="missingentryM" class="redtext"></h2>
+            <h2 id="missingentryF" class="redtext text-center"></h2>
+            <h2 id="missingentryM" class="redtext text-center"></h2>
+            <h2 id="errorG" class="redtext text-center"></h2>
+
         </form>
         <script src="js/script.js"></script>
 
@@ -76,7 +84,9 @@
 </body>
 
 
-
+<footer style="padding-top:50px; padding-bottom :50px;" class="container-fluid white">
+    <h2 class="text-center">Phone: +2547456467</h2>
+</footer>
 
 
 

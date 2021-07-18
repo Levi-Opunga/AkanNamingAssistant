@@ -20,10 +20,13 @@ function onSubmit() {
         document.getElementById("daycorrect").innerHTML = "";
     } else if (dd <= 0) {
         document.getElementById("dayerror").innerHTML =
-            "Invalid entry: An entry balow zero will result in errors ❌";
+            "Invalid entry: An entry below zero will result in errors ❌";
         document.getElementById("daycorrect").innerHTML = "";
-    } else {
+    } else if (dd >= 1 && dd < 32) {
         document.getElementById("daycorrect").innerHTML = "Valid entry ✅";
+        document.getElementById("dayerror").innerHTML = "";
+    } else {
+        document.getElementById("daycorrect").innerHTML = "";
         document.getElementById("dayerror").innerHTML = "";
     }
 
@@ -35,8 +38,11 @@ function onSubmit() {
         document.getElementById("montherror").innerHTML =
             "Invalid month such an entry will result in errors ❌";
         document.getElementById("monthcorrect").innerHTML = "";
-    } else {
+    } else if (mm >= 1 && mm < 13) {
         document.getElementById("monthcorrect").innerHTML = "Valid entry ✅";
+        document.getElementById("montherror").innerHTML = "";
+    } else {
+        document.getElementById("monthcorrect").innerHTML = "";
         document.getElementById("montherror").innerHTML = "";
     }
 
@@ -53,7 +59,7 @@ function onSubmit() {
     let dayOfTheWeekMale = finalValue;
     if (dayOfTheWeek == 0 && isFemale == "2") {
         document.getElementById("akan").innerHTML =
-            "🌼🌺Your Akan name is  Akosua🌺🌼";
+            '🌼🌺Your Akan name is  <b class="femaletext">Akosua</b>🌺🌼';
     } else if (dayOfTheWeek == 1 && isFemale == "2") {
         document.getElementById("akan").innerHTML =
             '🌼🌺Your Akan name is <b class="femaletext">Adwoa</b>🌺🌼';
@@ -62,22 +68,23 @@ function onSubmit() {
             '🌼🌺Your Akan name is <b class="femaletext"> Abenaa</b>🌺🌼';
     } else if (dayOfTheWeek == 3 && isFemale == "2") {
         document.getElementById("akan").innerHTML =
-            "🌼🌺Your Akan name is  Akua🌺🌼";
+            '🌼🌺Your Akan name is  <b class="femaletext">Akua</b>🌺🌼';
     } else if (dayOfTheWeek == 4 && isFemale == "2") {
         document.getElementById("akan").innerHTML =
-            "🌼🌺Your Akan name is  Yaa🌺🌼";
+            '🌼🌺Your Akan name is  <b class="femaletext">Yaa</b>🌺🌼';
     } else if (dayOfTheWeek == 5 && isFemale == "2") {
         document.getElementById("akan").innerHTML =
-            "🌼🌺Your Akan name is  Afua🌺🌼";
+            '🌼🌺Your Akan name is <b class="femaletext"> Afua</b>🌺🌼';
     } else if (dayOfTheWeek == 6 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "🌼🌺Your Akan name is Ama🌺🌼";
+        document.getElementById("akan").innerHTML =
+            '🌼🌺Your Akan name is <b class="femaletext">Ama</b>🌺🌼';
     } else if (dayOfTheWeek == 7 && isFemale == "2") {
-        document.getElementById("akan").innerHTML = "🌼🌺Your Akan name is Ama🌺🌼";
+        document.getElementById("akan").innerHTML =
+            '🌼🌺Your Akan name is <b class="femaletext">Ama</b>🌺🌼';
     } else if (dayOfTheWeek <= 7 || (dayOfTheWeek >= 0 && isFemale == "1")) {
         document.getElementById("akan").innerHTML = "";
     } else {
-        document.getElementById("missingentryF").innerHTML =
-            "Missing Entry !!!!!!!!";
+        document.getElementById("akan").innerHTML = "Missing Entry !!!!!!!!";
     }
 
     if (dayOfTheWeekMale == 0 && isMale == "1") {
@@ -102,8 +109,11 @@ function onSubmit() {
         (dayOfTheWeekMale >= 0 && isMale == "2")
     ) {
         document.getElementById("akan2").innerHTML = "";
+    } else if (isMale == 1 || isMale == 2) {
+        document.getElementById("errorG").innerHTML = "";
+    } else if (isMale != 1 && isMale != 2) {
+        document.getElementById("errorG").innerHTML = "Wrong Gender";
     } else {
-        document.getElementById("missingentryM").innerHTML =
-            "Missing Entry !!!!!!!!";
+        document.getElementById("akan1").innerHTML = "Missing Entry !!!!!!!!";
     }
 }
