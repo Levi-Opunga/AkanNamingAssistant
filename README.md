@@ -6,7 +6,7 @@
 
 ## Description
 
-> > This is a web application that enables you to easily get your Akan name from inputing your date of birth and and your gender . It uses the values of your birth date to evaluate which day of the week you were born and using that it assigns you the appropriate Akan name for your gender . Akan names are a part of Ghanian culture where a persons name is derived from the day of th week they were born . On many occasions it can be difficult to trace the day of the week which you were born thus the necessity of this web application that does that for you and tells youyour Akan name.
+> > This is a web application that enables you to easily get your Akan name from inputing your date of birth and and your gender . It uses the values of your birth date to evaluate which day of the week you were born and using that it assigns you the appropriate Akan name for your gender . Akan names are a part of Ghanian culture where a persons name is derived from the day of th week they were born . On many occasions it can be difficult to trace the day of the week which you were born thus the necessity of this web application that does that for you and tells you your Akan name.
 
 > > Here is a for link to the website: https://levi-opunga.github.io/AkanNamingAssistant/
 
